@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TEC Engenharia Ltda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('Plano de fundo.avif') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(0, 51, 102, 0.85);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    header img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #00509e;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #003366;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: rgba(0, 51, 102, 0.95);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Carrossel de clientes */
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .clientes-carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px 0;
+    }
+
+    .clientes-carousel img {
+      max-width: 150px;
+      flex: 0 0 auto;
+      margin: 0 15px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+
+    /* Redução de tamanho nas imagens específicas */
+    .clientes-carousel img[alt="Cliente 2"],
+    .clientes-carousel img[alt="Cliente 3"],
+    .clientes-carousel img[alt="Cliente 4"],
+    .clientes-carousel img[alt="Cliente 6"],
+    .clientes-carousel img[alt="Cliente 8"],
+    .clientes-carousel img[alt="Cliente 10"],
+    .clientes-carousel img[alt="Cliente 11"],
+    .clientes-carousel img[alt="Cliente 12"] {
+      max-width: 150px;
+    }
+
+    .clientes-carousel img:hover {
+      transform: scale(1.05);
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 51, 102, 0.8);
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .carousel-btn.left {
+      left: 0;
+    }
+
+    .carousel-btn.right {
+      right: 0;
+    }
+
+    form input, form textarea {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background-color: #00509e;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    form button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="TEC.png" alt="TEC Engenharia" />
+    <h1>TEC Engenharia Ltda</h1>
+    <p>Desenvolvimento de Estudos e Projetos elétricos, Instrumentação, Iluminação e Automação</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre a Empresa</h2>
+    <p>A TEC Engenharia Ltda desenvolve soluções avançadas em engenharia elétrica, automação e instrumentação, conduzindo projetos de alta criticidade técnica para empreendimentos industriais e comerciais de grande escala, assegurando performance energética, conformidade normativa e excelência executiva.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Desenvolvimento de Projetos Elétricos de Média e Alta Tensão para plantas industriais e empreendimentos de grande porte, incluindo sistemas de potência, redes de distribuição interna e infraestrutura elétrica industrial</li>
+
+<li>Projetos de Subestações de Energia (MT e AT), sistemas de proteção e controle, especificação de painéis, relés digitais e estudos de coordenação e seletividade</li>
+
+<li>Estudos avançados de Sistemas Elétricos de Potência: curto-circuito, fluxo de carga, análise de estabilidade, coordenação de proteção e análise de energia incidente (Arc-Flash), utilizando modelagem computacional especializada</li>
+
+<li>Projetos de Sistemas de Geração de Energia, incluindo cogeração e integração com concessionárias, com análise de desempenho e confiabilidade operacional</li>
+
+<li>Projetos de Instrumentação e Automação Industrial para plantas de processo, incluindo arquitetura de controle, integração de CLPs, sistemas supervisórios (SCADA) e redes industriais</li>
+
+<li>Modelagem e compatibilização de projetos em plataforma BIM, assegurando integração multidisciplinar, rastreabilidade técnica e otimização de implantação</li>
+
+<li>Consultoria técnica especializada e adequações normativas conforme NR10, NBR 5410, NBR 14039, NBR 5419 e demais normas aplicáveis, com emissão de laudos e pareceres técnicos</li>
+
+<li>Estudos luminotécnicos industriais com simulações computacionais, focados em desempenho operacional, segurança e eficiência energética</li>
+
+    </ul>
+  </section>
+
+  <section id="clientes">
+    <h2>Clientes Atendidos</h2>
+    <p>Aqui estão alguns dos nossos principais clientes:</p>
+
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+      <div class="clientes-carousel" id="carousel">
+        <img src="imagens/cliente1-logo.png" alt="Cliente 1">
+        <img src="imagens/cliente2-logo.png" alt="Cliente 2">
+        <img src="imagens/cliente3-logo.png" alt="Cliente 3">
+        <img src="imagens/cliente4-logo.png" alt="Cliente 4">
+        <img src="imagens/cliente5-logo.png" alt="Cliente 5">
+        <img src="imagens/cliente6-logo.png" alt="Cliente 6">
+        <img src="imagens/cliente7-logo.png" alt="Cliente 7">
+        <img src="imagens/cliente8-logo.png" alt="Cliente 8">
+        <img src="imagens/cliente9-logo.png" alt="Cliente 9">
+        <img src="imagens/cliente10-logo.png" alt="Cliente 10">
+        <img src="imagens/cliente11-logo.png" alt="Cliente 11">
+        <img src="imagens/cliente12-logo.png" alt="Cliente 12">
+      </div>
+
+      <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: engenharia@pmo-tec.com<br>
+       WhatsApp: (16) 99644-6868<br>
+       Endereço: Rua Dr. Paulo Tinoco Cabral nº 603 - Sala 07 - Ribeirão Preto, SP</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TEC Engenharia Ltda. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+
+    function scrollCarousel(direction) {
+      const scrollAmount = 300;
+      carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+
+    // Roda automaticamente a cada 5 segundos
+    setInterval(() => scrollCarousel(1), 5000);
+  </script>
+
+</body>
+</html>
